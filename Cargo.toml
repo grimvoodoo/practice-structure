@@ -1,0 +1,16 @@
+[package]
+name = "practice-structure"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bson = "2.6.1"
+dotenv = "0.15.0"
+futures = "0.3.28"
+graphviz-rust = "0.6.2"
+mongodb = "2.6.0"
+serde = "1.0.171"
+serde_json = "1.0.102"
+tokio = "1.29.1"

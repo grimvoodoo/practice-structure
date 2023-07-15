@@ -1,0 +1,24 @@
+{
+  "practice_leads": [
+    {
+      "name": "Joe Blogs",
+      "band": "8",
+      "manager": "David Smith",
+      "role": "Devops Engineer",
+      "skills": ["Ansible", "Terraform", "linux"],
+      "certificates": ["CKA", "CKAD", "JCE"],
+      "office": "Hull",
+      "location": "Worthing"
+    },
+    {
+      "name": "Jane Blogs",
+      "band": "8",
+      "manager": "David Smith",
+      "role": "Service Delivery Manager",
+      "skills": ["Mural", "jira"],
+      "certificates": ["ACA", "MRD"],
+      "office": "Bristol",
+      "location": "Bristol"
+    }
+  ]
+}
