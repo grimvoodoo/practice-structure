@@ -12,7 +12,7 @@ Once installed you can run this command to generate the diagram:
 
 It then reads that content and generates a diagram which looks like this:
 
-![Team Structure Diagram](diagram.png)
+![Team Structure Diagram](example_diagram.png)
 
 # Team Structure Visualization App
 
@@ -26,7 +26,20 @@ The application generates a Graphviz diagram from this data. Each person is repr
 
 The application is structured into two main parts:
 
-1. **Data Reading**: This part of the application connects to the MongoDB database and reads the data. It uses the `dotenv` library to manage environment variables for the database connection. The data is read into `Person` structs, which are then collected into vectors for practice leads, line managers, and team members.
+1. **Data Reading**: This part of the application connects to the MongoDB database and reads the data. It uses the `dotenv` library to manage environment variables for the database connection. The data is read into `Person` structs, which are then collected into vectors for practice leads, line managers, and team members. the format of the data should look like this:
+
+```
+{
+    "name": "Joe Blogs",
+    "band": "6a",
+    "manager": "Jane Blogs",
+    "role": "Devops Engineer",
+    "skills": [],
+    "certificates": [],
+    "office": "London",
+    "location": "Reading"
+}
+```
 
 > **Note** I have included three json files which contain mock data for some practice leads, line managers and team members, when the app is run it will look for the database and collections in mongodb and if they are not there create them. You can replace the mock data with real data and it will import it into mongodb for you automatically.
 

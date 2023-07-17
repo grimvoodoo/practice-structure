@@ -1,3 +1,5 @@
 /target
 .env
 diagram.dot
+diagram.png
+data/*
